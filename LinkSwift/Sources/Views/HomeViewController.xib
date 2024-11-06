@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="LinkSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_picture" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-Ph-s3G">
+                    <rect key="frame" x="-2" y="186" width="381" height="218"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trouvez le job de vos rêves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhM-mh-qEl">
+                    <rect key="frame" x="64" y="450" width="246" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsW-SP-I5l">
+                    <rect key="frame" x="50" y="564" width="275" height="60"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Se Connecter" cornerStyle="capsule">
+                        <color key="baseForegroundColor" systemColor="tintColor"/>
+                        <color key="baseBackgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="TdI-0N-gr6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMI-Zj-bVd">
+                    <rect key="frame" x="50" y="646" width="275" height="60"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="S'inscrire" cornerStyle="capsule">
+                        <color key="baseForegroundColor" systemColor="tintColor"/>
+                        <color key="baseBackgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="RkO-1h-zEO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="tintColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3dY-Ph-s3G" secondAttribute="trailing" constant="-4" id="0LQ-bU-DYB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BhM-mh-qEl" secondAttribute="bottom" constant="304" id="3fL-rS-akf"/>
+                <constraint firstItem="vMI-Zj-bVd" firstAttribute="top" secondItem="CsW-SP-I5l" secondAttribute="bottom" constant="22" id="5w4-11-TwJ"/>
+                <constraint firstItem="3dY-Ph-s3G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="139" id="8SF-Vm-voj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CsW-SP-I5l" secondAttribute="trailing" constant="50" id="GdM-0m-9sI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BhM-mh-qEl" secondAttribute="trailing" constant="65" id="MDS-DN-oWl"/>
+                <constraint firstItem="vMI-Zj-bVd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="NO3-7B-iFP"/>
+                <constraint firstItem="3dY-Ph-s3G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-2" id="PwE-IY-Q3x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vMI-Zj-bVd" secondAttribute="trailing" constant="50" id="QlR-N7-yBl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3dY-Ph-s3G" secondAttribute="bottom" constant="374" id="Tc6-6j-x3a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CsW-SP-I5l" secondAttribute="bottom" constant="154" id="acP-Td-CXg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vMI-Zj-bVd" secondAttribute="bottom" constant="72" id="bEh-C7-cNZ"/>
+                <constraint firstItem="CsW-SP-I5l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="mhp-RW-7BZ"/>
+                <constraint firstItem="BhM-mh-qEl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="v1z-wx-1Rc"/>
+                <constraint firstItem="BhM-mh-qEl" firstAttribute="top" secondItem="3dY-Ph-s3G" secondAttribute="bottom" constant="46" id="wFj-ur-zb0"/>
+                <constraint firstItem="CsW-SP-I5l" firstAttribute="top" secondItem="BhM-mh-qEl" secondAttribute="bottom" constant="90" id="yEx-TT-8C0"/>
+            </constraints>
+            <point key="canvasLocation" x="100" y="19.211822660098523"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_picture" width="1400" height="1356"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
