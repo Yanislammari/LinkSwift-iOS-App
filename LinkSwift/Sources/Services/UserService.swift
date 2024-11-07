@@ -3,7 +3,8 @@ import Foundation
 class UserService {
     static var userId: UUID? = nil
     static var user: User? = nil
-    
+    static var userConnected: User? = nil;
+        
     static func getUserIdByToken(token: String, completion: @escaping () -> Void) {
         let url: URL = URL(string: "\(Api.baseUrl)/auth")!
         var request: URLRequest = URLRequest(url: url)
@@ -55,5 +56,14 @@ class UserService {
             }
         }
         task.resume()
+    }
+    
+    static func getUserConnected(id: UUID, completion: @escaping () -> Void) {
+        self.getUserById(id: id) {
+            DispatchQueue.main.async {
+                self.userConnected = self.user
+                completion()
+            }
+        }
     }
 }
