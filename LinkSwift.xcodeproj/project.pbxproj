@@ -15,6 +15,7 @@
 		3326279E2CA2F0E300F7B2D4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3326279C2CA2F0E300F7B2D4 /* MainViewController.xib */; };
 		3328D0192CA6F5E60092289A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328D0172CA6F5E60092289A /* PostTableViewCell.swift */; };
 		3328D01A2CA6F5E60092289A /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3328D0182CA6F5E60092289A /* PostTableViewCell.xib */; };
+		335737782CDED80B00D4031D /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335737772CDED80700D4031D /* PostService.swift */; };
 		3369158E2CA2D1D900ED64E3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369158D2CA2D1D900ED64E3 /* AuthService.swift */; };
 		336915902CA2D34200ED64E3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369158F2CA2D34200ED64E3 /* Api.swift */; };
 		336915922CA2E53200ED64E3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336915912CA2E53200ED64E3 /* UserService.swift */; };
@@ -49,7 +50,6 @@
 		33D4CA832CA5AE980049F944 /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4CA822CA5AE980049F944 /* CompanyService.swift */; };
 		33D4CA852CA5AEA30049F944 /* SchoolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4CA842CA5AEA30049F944 /* SchoolService.swift */; };
 		33D4CA872CA5AEAD0049F944 /* OfferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4CA862CA5AEAD0049F944 /* OfferService.swift */; };
-		33D4CA892CA5AEB70049F944 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4CA882CA5AEB70049F944 /* PostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +78,7 @@
 		3326279C2CA2F0E300F7B2D4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		3328D0172CA6F5E60092289A /* PostTableViewCell.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
 		3328D0182CA6F5E60092289A /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		335737772CDED80700D4031D /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		3369158D2CA2D1D900ED64E3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3369158F2CA2D34200ED64E3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		336915912CA2E53200ED64E3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -116,7 +117,6 @@
 		33D4CA822CA5AE980049F944 /* CompanyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
 		33D4CA842CA5AEA30049F944 /* SchoolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolService.swift; sourceTree = "<group>"; };
 		33D4CA862CA5AEAD0049F944 /* OfferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferService.swift; sourceTree = "<group>"; };
-		33D4CA882CA5AEB70049F944 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,12 +271,12 @@
 		337D530F2CA1686200D98DEB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				335737772CDED80700D4031D /* PostService.swift */,
 				3369158D2CA2D1D900ED64E3 /* AuthService.swift */,
 				336915912CA2E53200ED64E3 /* UserService.swift */,
 				33D4CA822CA5AE980049F944 /* CompanyService.swift */,
 				33D4CA842CA5AEA30049F944 /* SchoolService.swift */,
 				33D4CA862CA5AEAD0049F944 /* OfferService.swift */,
-				33D4CA882CA5AEB70049F944 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -441,7 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D4CA892CA5AEB70049F944 /* PostService.swift in Sources */,
 				33D4CA872CA5AEAD0049F944 /* OfferService.swift in Sources */,
 				336915922CA2E53200ED64E3 /* UserService.swift in Sources */,
 				33CDFFFE2CA2BB8300E35572 /* Offer.swift in Sources */,
@@ -465,6 +464,7 @@
 				33CD00002CA2BB9200E35572 /* Post.swift in Sources */,
 				33D4CA832CA5AE980049F944 /* CompanyService.swift in Sources */,
 				339994812CA1794E00125669 /* RegisterViewController.swift in Sources */,
+				335737782CDED80B00D4031D /* PostService.swift in Sources */,
 				33D4CA852CA5AEA30049F944 /* SchoolService.swift in Sources */,
 				339949542CA5AC9600A19BA7 /* ProfileViewController.swift in Sources */,
 				339949502CA5AC8200A19BA7 /* FavoritesViewController.swift in Sources */,
