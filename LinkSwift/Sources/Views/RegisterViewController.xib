@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="LinkSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="alreadyRegisterLoginLabel" destination="r8y-oO-yXH" id="BYk-zR-w36"/>
+                <outlet property="emailTextField" destination="Wiy-WI-JpA" id="Cph-q4-WoH"/>
+                <outlet property="firstnameTextField" destination="Ikc-57-qzN" id="82W-Px-ijx"/>
+                <outlet property="lastnameTextField" destination="LuM-2l-7Km" id="oS2-pS-TWZ"/>
+                <outlet property="passwordTextField" destination="ezh-4i-7c0" id="2PB-en-zaR"/>
+                <outlet property="profilePictureImageView" destination="6To-6y-Dwg" id="EBV-mX-bZx"/>
+                <outlet property="view" destination="g6T-KV-uZ4" id="tcl-u0-e2L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="g6T-KV-uZ4">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscrivez-vous !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-xf-dhM">
+                    <rect key="frame" x="21" y="35.333333333333336" width="338" height="27.666666666666664"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="6To-6y-Dwg">
+                    <rect key="frame" x="103" y="112" width="175" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6To-6y-Dwg" secondAttribute="height" multiplier="1:1" id="nHG-ii-9e1"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Votre prénom..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ikc-57-qzN">
+                    <rect key="frame" x="23" y="326" width="334" height="34"/>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Votre nom..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LuM-2l-7Km">
+                    <rect key="frame" x="23" y="380" width="334" height="34"/>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Votre email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wiy-WI-JpA">
+                    <rect key="frame" x="23" y="434" width="334" height="34"/>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Votre mot de passe..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezh-4i-7c0">
+                    <rect key="frame" x="23" y="490" width="334" height="34"/>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY6-sd-EgQ">
+                    <rect key="frame" x="25" y="558" width="334" height="53"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="S'inscrire" cornerStyle="large">
+                        <color key="baseForegroundColor" systemColor="linkColor"/>
+                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="ByU-gT-UmA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous avez déjà un compte ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-ln-Js6">
+                    <rect key="frame" x="18" y="698" width="338" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connectez-vous ici !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8y-oO-yXH">
+                    <rect key="frame" x="18" y="735" width="338" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4M3-Zg-WKc"/>
+            <color key="backgroundColor" systemColor="tintColor"/>
+            <constraints>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="Ikc-57-qzN" secondAttribute="bottom" constant="418" id="6Ta-Dd-gqO"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="EY6-sd-EgQ" secondAttribute="trailing" constant="16" id="Aen-vn-q35"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="Wiy-WI-JpA" secondAttribute="bottom" constant="310" id="BFa-UM-Jw7"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="Ikc-57-qzN" secondAttribute="trailing" constant="18" id="BFv-If-If8"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="r8y-oO-yXH" secondAttribute="bottom" constant="22" id="GA4-LG-oua"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="6To-6y-Dwg" secondAttribute="bottom" constant="491" id="HoY-QT-238"/>
+                <constraint firstItem="Wiy-WI-JpA" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="23" id="I21-ot-oU2"/>
+                <constraint firstItem="r8y-oO-yXH" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="18" id="IWS-XW-qXU"/>
+                <constraint firstItem="Ikc-57-qzN" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="23" id="Ihe-6q-aCK"/>
+                <constraint firstItem="ezh-4i-7c0" firstAttribute="top" secondItem="Wiy-WI-JpA" secondAttribute="bottom" constant="22" id="N6o-n7-d3B"/>
+                <constraint firstItem="EY6-sd-EgQ" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="25" id="OUb-aY-YRH"/>
+                <constraint firstItem="LuM-2l-7Km" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="23" id="PeM-1F-AQg"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="ezh-4i-7c0" secondAttribute="bottom" constant="254" id="Px2-b6-fgz"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="bWa-xf-dhM" secondAttribute="trailing" constant="16" id="ROi-ad-ELE"/>
+                <constraint firstItem="6To-6y-Dwg" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="103" id="VZF-6l-0Zn"/>
+                <constraint firstItem="Wiy-WI-JpA" firstAttribute="top" secondItem="LuM-2l-7Km" secondAttribute="bottom" constant="20" id="VeJ-KU-AOZ"/>
+                <constraint firstItem="ezh-4i-7c0" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="23" id="WdN-ZM-3j3"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="EY6-sd-EgQ" secondAttribute="bottom" constant="167" id="XSP-ip-CGV"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="LuM-2l-7Km" secondAttribute="trailing" constant="18" id="ZeP-m4-dvE"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="LuM-2l-7Km" secondAttribute="bottom" constant="364" id="cSi-DG-tX0"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="OOE-ln-Js6" secondAttribute="bottom" constant="59" id="dAP-YR-RXh"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="bottom" secondItem="bWa-xf-dhM" secondAttribute="bottom" constant="715" id="fBE-ol-Y2f"/>
+                <constraint firstItem="bWa-xf-dhM" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="21" id="gOh-cF-kEA"/>
+                <constraint firstItem="OOE-ln-Js6" firstAttribute="leading" secondItem="4M3-Zg-WKc" secondAttribute="leading" constant="18" id="ggL-zj-cUi"/>
+                <constraint firstItem="LuM-2l-7Km" firstAttribute="top" secondItem="Ikc-57-qzN" secondAttribute="bottom" constant="20" id="glm-py-qQH"/>
+                <constraint firstItem="r8y-oO-yXH" firstAttribute="top" secondItem="OOE-ln-Js6" secondAttribute="bottom" constant="16" id="kOx-nt-zkA"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="ezh-4i-7c0" secondAttribute="trailing" constant="18" id="kWW-26-xdY"/>
+                <constraint firstItem="6To-6y-Dwg" firstAttribute="top" secondItem="bWa-xf-dhM" secondAttribute="bottom" constant="49" id="nFW-Kj-1bp"/>
+                <constraint firstItem="EY6-sd-EgQ" firstAttribute="top" secondItem="ezh-4i-7c0" secondAttribute="bottom" constant="34" id="nTx-Yn-VWX"/>
+                <constraint firstItem="OOE-ln-Js6" firstAttribute="top" secondItem="EY6-sd-EgQ" secondAttribute="bottom" constant="87" id="nrk-7n-rE4"/>
+                <constraint firstItem="Ikc-57-qzN" firstAttribute="top" secondItem="6To-6y-Dwg" secondAttribute="bottom" constant="39" id="rb0-YW-hPu"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="OOE-ln-Js6" secondAttribute="trailing" constant="19" id="sLA-KU-rqN"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="Wiy-WI-JpA" secondAttribute="trailing" constant="18" id="wjy-Ob-oWH"/>
+                <constraint firstItem="4M3-Zg-WKc" firstAttribute="trailing" secondItem="r8y-oO-yXH" secondAttribute="trailing" constant="19" id="y6E-Io-CHQ"/>
+            </constraints>
+            <point key="canvasLocation" x="125.59999999999999" y="19.211822660098523"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="1200" height="800"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
